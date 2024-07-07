@@ -69,4 +69,5 @@ Contributions are welcome! Please follow these steps:
 
 ## VideoDemo
 
-https://github.com/alphaXcosmo/Car-Rental-Management-System/issues/1#issue-2394163175
+[https://github.com/alphaXcosmo/Car-Rental-Management-System/issues/1#issue-2394163175](https://github.com/alphaXcosmo/Car-Rental-Management-System/assets/141503922/9cd137a4-cfcd-46b6-aa57-c11e066bd1a2
+)
