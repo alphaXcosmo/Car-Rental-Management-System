@@ -1,0 +1,304 @@
+body {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background: linear-gradient(#141e30, #2a6c56);
+    font-weight: 300;
+    color: #fff; /* Set all text color to white */
+    text-align: center; /* Center align all text */
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="date"] {
+    margin: 5px;
+    appearance: none;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    font-family: "Helvetica", arial, sans-serif;
+    font-size: 20px;
+    border: 1px solid transparent;
+    color: transparent;
+    background: transparent;
+    padding: 7px;
+    display: inline-block !;
+    visibility: initial;
+  }
+
+/* For Rental Date input */
+#rental_date::before {
+    margin: 0px 0px 0px 19px;
+    content: "Rental Date";
+    color: #03F484;
+    position: absolute;
+}
+
+/* For Return Date input */
+#return_date::before {
+    margin: 0px 0px 0px 19px;
+    content: "Return Date";
+    color: #03F484;
+    position: absolute;
+}
+
+  input[type="date"]::before {
+    margin: 0px 0px 0px 19px;
+    content: "Rental Date";
+    color: #03F484;
+    position: absolute;
+
+  }
+
+label{
+    margin-left: 20px;
+}
+/* The container must be positioned relative: */
+.custom-select {right: 5px;
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: transparent;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #03F484 transparent transparent transparent;
+  }
+  
+  .select-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust as needed */
+}
+
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    justify-content: center;
+    border-color: transparent transparent #03F484 transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {border-radius: 6px;
+    color: #03F484;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .select-items {border-radius: 6px;
+    position: absolute;
+    background-color: #05361fcb;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+html {
+    height: 100%;
+}
+
+
+/* CSS */
+.button-64 {
+  align-items: center;
+  margin:  10px;
+  background-image: linear-gradient(144deg,#03F484, #01FEB6 50%,#84fe01);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: content-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px 4px 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+  color: #141e30;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 6px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 20px;
+    min-width: 96px;
+  }
+}
+p {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #fff; /* Set heading text color to white */
+}
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    color: #fff; /* Set link text color to white */
+}
+
+a,
+a:hover {
+    text-decoration: none !important;
+}
+
+.content {
+    padding: 7rem 0;
+}
+
+h2 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.custom-table {
+    justify-content: center;
+    min-width: 900px;
+    margin: 0 auto; /* Center align the table */
+}
+
+.custom-table thead tr,
+.custom-table thead th {
+    padding-bottom: 30px;
+    border-top: none;
+    border-bottom: none !important;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.custom-table tbody th,
+.custom-table tbody td {
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 300;
+    border: none;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.custom-table tbody th small,
+.custom-table tbody td small {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 300;
+}
+
+.custom-table tbody th a,
+.custom-table tbody td a {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.custom-table tbody th .more,
+.custom-table tbody td .more {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.custom-table tbody tr {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.custom-table tbody tr:hover td,
+.custom-table tbody tr:focus td {
+    color: #03F484;
+}
+
+.custom-table tbody tr:hover td a,
+.custom-table tbody tr:focus td a {
+    color: #03F484;
+}
+
+.custom-table tbody tr:hover td .more,
+.custom-table tbody tr:focus td .more {
+    color: #03F484;
+}
+
+.custom-table .td-box-wrap {
+    padding: 0;
+}
+
+.custom-table .box {
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.custom-table .box td,
+.custom-table .box th {
+    border: none !important;
+}
